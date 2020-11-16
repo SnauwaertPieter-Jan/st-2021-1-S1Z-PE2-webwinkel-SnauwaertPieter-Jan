@@ -1,0 +1,97 @@
+body {
+    background: url(../images/BackGround.jpg);
+    display: grid;
+    grid-template-columns: 25em auto;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas: 'aside nav' 'div header' 'footer footer';
+    margin: 25px 45px 45px 45px;
+}
+
+aside {
+    grid-area: aside;
+    border-radius: 500px;   
+}
+
+.logo {
+    border-radius: 500px;
+    float: left;
+    margin-right: 15px;
+    height: 200px;
+    position: relative;
+    animation: blub;
+    animation-duration: 2s;
+    animation-direction: reverse;
+}
+
+@keyframes blub {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:200px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: #479ce0;
+    border-radius: 50px;
+    text-align: center;
+    overflow: yellow;
+    font-size: 35px;
+}
+
+nav a {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+nav :hover {
+    background-color: yellow;
+    border-radius: 200px;
+    transition: 2s;
+}
+
+div {
+    grid-area: div;
+    margin-top: 170px;  
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-size: 33px;
+    color: white;
+}
+
+#ready {
+    color: yellow;
+    font-size: 50px;
+}
+
+.retroColor {
+    color: violet;
+    font-family: fantasy;
+}
+
+.gamesColor {
+    color: #479ce0;
+    font-family: monospace;
+}
+
+#valhalla {
+    height: 200px;
+    float: right;
+
+}
+footer {
+    grid-area: footer;
+    color: floralwhite;
+    float: left;
+    margin-top: -150px;
+}
+
+.arcade {
+    height: 24px;
+}
+
